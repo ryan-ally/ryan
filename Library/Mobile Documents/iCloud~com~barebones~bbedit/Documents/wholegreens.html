@@ -1,0 +1,301 @@
+<html>
+ <head>
+  <title>html5 layout</title>
+  <style type="text/css">
+   header, section, footer, aside, nav, article, figure, figcaption  {
+      display: block;}
+    body {
+      color: black;
+      background-color: green;
+      background-image: none;
+      background-position: center;
+      font-family: georgia, times, serif;
+      line-height: 1.em;
+      margin: 10px;}
+    .wrapper {
+      width: 1035px;
+      margin: 20px auto 20px auto;
+      background-color: white;
+      border: 95px ridge #333333;
+      box-shadow: 5px 15px 15px 15px;
+      color: black;}
+    header {
+    background-image: https://images.pexels.com/photos/2731663/pexels-photo-2731663.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500;
+      border: 10px ridge black;
+      text-align: center;
+      height: 350px;
+      background-color: oldlace;}
+    h1 {
+      position: absolute;
+      font-weight; bold;
+      color: green;
+      width: 950px;
+      height: 130px;
+      margin: 30px;
+      font-size: 600%;
+      text-shadow: 15px 25px 20px;
+      text-decoration: underline;}
+    nav, footer {
+      clear: both;
+      background-color: black;
+      height: 30px;
+      width: 1035px;}
+    nav ul {
+      box-shadow: 5px 7px 9px;
+      border: 3px ridge green;
+      margin: 2px;
+      padding: -1px 1px -1px 0px;}
+    nav li a:hover, nav li a.current {
+      color: green;
+      display: inline;
+      padding: 0px 10px 0px 25px;
+      border-right: 3px ridge black;
+      border-left: 3px ridge black;
+      box-shadow: 5px 6px 5px;}
+    nav li { 
+      border-left: 3px ridge black;
+      padding: 0px 10px 0px 25px;
+      display: inline;
+      color: green;}
+    section.courses { 
+      float: right;
+      width: 665px;
+      border-right: 3px ridge green;}
+    article {
+      clear: both;
+      overflow: auto;
+      width: 100%;}
+    hgroup {
+      margin-top: 10px;}
+    figure {
+      float: left;
+      width: 200px;
+      height: 235px;
+      margin: auto;
+      border: 3px ridge green;
+      box-shadow: 1px 1px 1px 1px }
+    aside {
+      width: 250px;
+      float: left;
+      padding: 0px 0px 80px 28px;
+      color: black;
+      background-color: grey;
+      margin: 20px;
+      border: 3px ridge green;
+      box-shadow: 5px 7px 9px;}
+    aside section a {
+      display: block;
+      padding: 17px;
+      border-bottom: 1px ridge green;
+      border-left: 2px ridge green;}
+    aside sectcion a:hover {
+      color: #985dfa;
+      background-color: #efefef;}
+    a {
+      display: inline;
+      color: black;
+      text-decoration: none;}
+    h1, h2, h3 {
+      font-weight: bold;
+      box-shadow: 5px 7px 8px;}
+    h2 {
+      margin: 0px 100px 50px 10px;
+      padding: 10px;}
+    h2 { 
+      Color: green;
+      text-decoration: underline;
+      text-shadow: 20px 10px 5px;
+      text-align: center;
+      background-color: oldlace;
+      letter-spacing: 2px;
+      padding: 9px 0px 10px 305px;
+      border-bottom: 2px ridge black;
+      border-left: 4px ridge black;
+      border-right: 4px ridge black;
+      border-top: 7px ridge black;
+      margin-right: 15px;}
+    p {
+      min-height: 10px;
+      max-height: 300px;}
+    h3 {
+      margin: 0px 0px 10px 305px;
+      color: black;
+      background-color: green;
+      border-bottom: 0px ridge black;
+      border-left: 5px ridge black;
+      border-right: 1px ridge black;
+      border-top: 6px ridge black;}
+    aside h2 {
+      background-color: black;
+      padding: 0px 3px 0px 0px;
+      color: green;  
+      border-right: 3px ridge green;
+      border-left: 3px ridge green;
+      border-bottom: 3px ridge green;
+      border-top: 3px ridge green;
+      text-align: center;}
+    footer {
+      font-size: 80%;
+      color: black;
+      background-color: green;
+      padding: 6px 0px 0px -1px;
+      border-top: 2px ridge green;
+      border-bottom: 2px ridge black;
+      border-right: 2px ridge green;
+      box-shadow: 5px 7px 9px;}
+    thead {
+      box-shadow: 5px 6px 9px;
+      margin: 10px;
+      background-color: green;}
+    td {
+      color: green;
+      background-color: black;
+      font-weight: bold;
+      text-align: center;
+      border: 2px double green;
+      box-shadow: 5px 5px 6px;
+      margin: 10px;}
+    fieldset  {
+      color: green;
+      font-weight: bold;
+      text-decoration: underline;
+      background-color: oldlace;
+      border: 3px ridge black;
+      box-shadow: 4px 5px 7px;
+      margin: 10px;}
+    p {
+      margin: 10px;
+      font-family: sans-serif;
+      text-decoration: underline;
+      line-height: 165%;
+      color: green;}
+    th {
+      color: oldlace;
+      box-shadow: 5px 6px 9px;
+      border: 3px ridge black;
+      margin: 10px;}
+    tbody {
+      box-shadow: 5px 6px 9px;}
+  </style>
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"</script> 
+  <![endif]-->
+</head> 
+<body>
+  <div class="wrapper">
+    <header>
+    <img src="https://images.pexels.com/photos/2731663/pexels-photo-2731663.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="leaf" width="1015px" height="180px"/>
+      <h1><i><strong>Whole Greens Inc.</strong></i></h1>
+    </header>
+      <nav>
+        <ul>
+          <li><a href="" class="current"><b><i>home</i></b></a></li>
+          <li><a href="" class="current"><b><i>help</i></b></a></i>
+          <li><a href="" class="current"><b><i>accesories</i></b></a></li>
+          <li><a href="" class="current"><b><i>employment</i></b></a></li>
+          <li><a href="" class="current"><b><i>delivery</i></b></a></li>
+          <li><a href="/Users/owner/Library/Mobile Documents/iCloud~com~barebones~bbedit/Documents/flower:bud.webarchive" class="current"><b><i>flower/bud</i></b></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="courses">
+      <article>
+          <br>
+        <figure>
+          <img src="https://images.pexels.com/photos/606506/pexels-photo-606506.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="8-G" width="200px" height="235px"/>
+            <br>
+        </figure>
+        <hgroup>
+          <h2><b><i>Innovative Technology</i></b></h2>
+            <p>We are always following all safety regulations and guidelines for sole purpose of noty only keeping employees lives safe but their families lives here at whole Greens inc. </p>
+          <h3><b><i>Five week course in L.A.</i></b></h3>
+        </hgroup>
+        <p><i>A five week introduction to traditional,mind blowing, and original teachings that give you a selection of quality production as well as a finely cured product of bud.</i></p>
+      </article>
+      <article>
+        <figure>
+          <img src="https://images.pexels.com/photos/3676962/pexels-photo-3676962.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="200" height="235" alt="Hi-kote1" />
+        </figure>
+        <hgroup>
+          <h2><b><i>Quality Inspection Classes</i></b></h2>
+            <p>As you can see in the example images to your left we grow a wide variety of strains that serve a greater purpose to our world. </p>
+          <h3><b><i>One day workshop</i></b></h3>
+        </hgroup>
+        <p><i>An intensive one day course looking at how to create the best quality output for use in a range of cannibis industries. all of our plants and concentrates are FDA approved and are the best quality money can buy for a reasonable price, feel free to take a look at compared prices in our flower/bud department.</i></p>
+        <br>
+        <table border="1" style="width:100%">
+          <thead>
+            <tr>
+              <th>interiew group A</th>
+              <th>interview group B</th>
+              <th>interview group C</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>oct 1</td>
+            <td>0ct 8</td>
+            <td>oct 15</td>
+          </tr>
+          <tr>
+            <td>sunday</td>
+            <td>friday</td>
+            <td>tuesday</td>
+            <tr>
+              <td>5:30 am onsite</td>
+              <td>5:40 am onsite</td>
+              <td>6:00 am onsite</td>
+          </tr>
+          </tbody>
+        </table>
+        <form>
+            <p>if you were called and assigned to a group you will need to confirm that by logging in and and selecting the correct group bubble you are in to ensure that your spot wont be mistakenly taken or assigned elswhere unbenonce to you.</p>
+          <br>
+          <fieldset style="width:50%">
+            <legend> please select the group you are in:</legend>
+            <input type="radio" name="blogtype" value="Group A">Group A
+            <br>
+            <input type="radio" name="blogtype" value="Group B">Group B
+            <br>
+            <input type="radio" name="blogtype" value="Group C">Group C
+              <br>
+          </fieldset>
+        </form>
+      </article>
+    </section>
+    <aside>
+      <form action="http://www.example.org/suscribe.php"/>
+            <h2><b><i>email</i></b></h2><br />
+      <form action="http://www.example.org/login/" 
+           method="post" />
+        <label for="username"><strong><i>username:</i></strong></label>
+        <input type="text" name="username"
+          required="required" /><br />
+        <label for="password"><strong><i>password:</i></strong></label>
+        <input type="password" name="password"
+          required="required" />
+        <input type="submit" value="submit"/><br /> 
+            <p><i><b>suscribe to our email list:</b></i></p>
+            <input type="email" name="email" />
+            <input type="submit" value="submit" /><br>
+        <section class="departments">
+        <h2><b><i>strains</i></b></h2>
+          <a href=""><b><u>indica</u></b></a>
+          <a href=""><b><u>sativa</u></b></a>
+          <a href=""><b><u>hybrid</u></b></a>
+          <a href=""><b><u>CBD</u></b></a><br />
+        </section><br />
+        <section class="contact-details">
+        <h2><b><i>contact</i></b></h2>
+          <p>Whole Greens<br />
+             isabella street<br />
+             california city, CA<br />
+             1760-333-3333</p><br />
+       </section>
+      </aside>
+      <footer>
+     <b>&copy; 2011 Whole Greens Cannabis inc.</b>
+     </footer>
+   </div><!--.wrapper-->
+ </body>
+</html>
